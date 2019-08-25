@@ -10,7 +10,7 @@ WORKDIR C:/Umbraco
 # Configure IIS with the website
 RUN powershell -NoProfile -Command \
     Import-Module IISAdministration; \
-    New-IISSite -Name "Site" -PhysicalPath C:\Site -BindingInformation "*:8080:"
+    New-IISSite -Name "Site" -PhysicalPath C:\Umbraco -BindingInformation "*:8080:"
 
 # Release from this page: https://github.com/umbraco/Umbraco-CMS/releases update to the latest version required
 ADD http://umbracoreleases.blob.core.windows.net/download/UmbracoCms.8.1.3.zip .
