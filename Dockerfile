@@ -13,11 +13,11 @@ RUN powershell -NoProfile -Command \
     New-IISSite -Name "Site" -PhysicalPath C:\Umbraco -BindingInformation "*:8080:"
 
 # Release from this page: https://github.com/umbraco/Umbraco-CMS/releases update to the latest version required
-ADD http://umbracoreleases.blob.core.windows.net/download/UmbracoCms.8.1.3.zip .
+ADD http://umbracoreleases.blob.core.windows.net/download/UmbracoCms.8.1.5.zip .
 
 # Expand the archive with powershell
-RUN powershell -NoProfile -Command Expand-Archive UmbracoCms.8.1.3.zip .; \
-    Remove-Item UmbracoCms.8.1.3.zip
+RUN powershell -NoProfile -Command Expand-Archive UmbracoCms.8.1.5.zip .; \
+    Remove-Item UmbracoCms.8.1.5.zip
 
 EXPOSE 8080
 EXPOSE 80
