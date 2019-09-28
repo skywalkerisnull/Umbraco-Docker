@@ -22,5 +22,5 @@ $Version = $FileName.Replace("umbracocms.","")
 "Docker will build Umbraco on Version: $Version" 
 ""
 
-# Build the docker image using the above version
-docker build --build-arg version=$Version .
+# Build the docker image using the above version and tag them as the current version and latest
+docker build --build-arg version=$Version -t skywalkerisnull/umbraco:latest -t skywalkerisnull/umbraco:$Version .
