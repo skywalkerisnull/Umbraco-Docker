@@ -8,3 +8,4 @@ The powershell scripts do the following functions:
 
 * build.ps1 - Find the latest version of Umbraco on the Github page and build a new docker image
 * push.ps1 - Push the latest build version of Umbraco to your Docker repo (cannot build windows based docker images on https://hub.docker.com )
+* run.ps1 - Runs the image with some standard options set
