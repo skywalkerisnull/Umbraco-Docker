@@ -1,7 +1,7 @@
 # This docker file setups Umbraco to run with no files required on your local machine
 FROM mcr.microsoft.com/dotnet/framework/aspnet:4.7.2-windowsservercore-ltsc2019
 
-# Can be changed without editing the docker file by running: "docker build --build-arg version=8.1.5 ."
+# Can be changed without editing the docker file by running: "docker build --build-arg VERSION=8.1.5 ."
 ARG VERSION=8.1.5
 
 # Delete all files in the default IIS folders
