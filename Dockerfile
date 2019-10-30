@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/framework/aspnet:4.7.2-windowsservercore-ltsc2019
 
 # Can be changed without editing the docker file by running: "docker build --build-arg VERSION=8.1.5 ."
-ARG VERSION=8.1.5
+ARG VERSION=8.2.1
 
 # Delete all files in the default IIS folders
 RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
