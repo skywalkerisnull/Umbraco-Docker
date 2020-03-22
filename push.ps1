@@ -1,4 +1,4 @@
-# This pushes the latest build up to the Docker repo that is connected. It will all tags for the specified image
+# This pushes the latest build up to the Docker repo that is connected. It will push all tags for the specified image
 $Image = "skywalkerisnull/umbraco"
 $DockerImages = {docker images}.Invoke()
 [System.Collections.ArrayList]$UmbracoArray = @()
